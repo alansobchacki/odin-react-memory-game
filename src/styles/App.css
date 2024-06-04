@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 400px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-card {
+  background-color: black;
+  width: 300px;
+  height: 400px;
+}
+
+.image-card:hover {
+  cursor: pointer;
+}
