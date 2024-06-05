@@ -34,3 +34,4 @@ I'm getting the hang of using useState better. It was also nice having to work w
 
 Ironically, I'm learning React, but the biggest struggle was handling the API calls within React. Nothing major, but still.
 
+Also, keep in mind that the game theme was optional. Several students made games around their favorite shows/games. I made my game about Asian food because it was easier to find APIs with food images.
