@@ -63,7 +63,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="main-container">
       <Greetings gameOver={gameOver} />
       <Scoreboard currentScore={currentScore} maxScore={maxScore} />
       <DisplayCards
