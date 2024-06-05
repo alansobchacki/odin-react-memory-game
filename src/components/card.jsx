@@ -8,7 +8,7 @@ export default function Card({
   resetScore,
   resetAllCards,
 }) {
-  const [isClicked, setIsClicked] = useState(false);
+  const [, setIsClicked] = useState(false);
   const [counter, setCounter] = useState(0);
 
   function handleClick() {
@@ -32,10 +32,9 @@ export default function Card({
   }, [resetAllCards]);
 
   return (
-    <div onClick={handleClick} className="image-card">
+    <div onClick={handleClick} className="card">
       <p>{name}</p>
-      <p>{image}</p>
-      <p>{isClicked ? "I was clicked!" : "I wasn't clicked!"}</p>
+      <img src={image} alt={name} />
     </div>
   );
 }

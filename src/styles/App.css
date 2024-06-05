@@ -5,20 +5,35 @@
   text-align: center;
 }
 
+#main-container {
+  display: flex;
+}
+
 #card-container {
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(3, 400px);
-  gap: 10px;
+  gap: 25px;
   justify-content: center;
 }
 
-.image-card {
+.card {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   width: 300px;
   height: 400px;
 }
 
-.image-card:hover {
+.card p {
+  font-weight: bold;
+}
+
+.card:hover {
   cursor: pointer;
+}
+
+.card img {
+  min-width: 100%;
+  min-height: 90%;
 }

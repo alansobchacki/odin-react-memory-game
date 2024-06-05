@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import { cards } from "./data.jsx";
 import Card from "./card.jsx";
 
 function shuffleArray(array) {
@@ -11,13 +10,14 @@ function shuffleArray(array) {
   return array;
 }
 
-// eslint-disable-next-line react/prop-types
 export default function DisplayCards({
   addCurrentScore,
   resetScore,
   gameOver,
+  cards,
 }) {
   const [resetAllCards, setResetAllCards] = useState(false);
+
   const shuffledCards = shuffleArray(cards);
 
   function handleResetScore() {
