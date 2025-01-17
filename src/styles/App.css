@@ -43,6 +43,7 @@
   flex-direction: column;
   background-color: black;
   min-width: 300px;
+  max-width: 350px;
   width: 20%;
   height: auto;
   border: 3px solid transparent;
@@ -58,7 +59,7 @@
 
 .card-image {
   width: 100%;
-  height: 100%;
+  height: 300px;
 }
 
 @media (max-width: 550px) {
