@@ -1,6 +1,8 @@
 #main-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
   gap: 15px;
 }
 
@@ -9,10 +11,29 @@
   margin-bottom: -1%;
 }
 
+#greetings-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+}
+
+#scoreboard-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+}
+
+@media (max-width: 550px) {
+  #scoreboard-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
 #card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(3, 400px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
 }
@@ -21,10 +42,29 @@
   display: flex;
   flex-direction: column;
   background-color: black;
-  width: 300px;
-  height: 400px;
+  min-width: 300px;
+  width: 20%;
+  height: auto;
   border: 3px solid transparent;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s ease, width 0.3s ease, height 0.3s ease;
+}
+
+@media (max-width: 550px) {
+  .card {
+    min-width: 150px;
+    height: 200px;
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 550px) {
+  .card-image {
+    height: 144px;
+  }
 }
 
 .card p {
@@ -36,11 +76,10 @@
   border-color: #646cff;
 }
 
-.card img {
-  height: 275px;
-}
-
 #footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: black;
   padding: 15px;
   margin-top: 4%;

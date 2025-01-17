@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 export default function Greetings({ gameOver }) {
   return (
-    <>
+    <div id="greetings-container">
       {gameOver ? (
         <>
           <h1>You won the game!</h1>
@@ -9,13 +9,13 @@ export default function Greetings({ gameOver }) {
         </>
       ) : (
         <>
-          <h1>Asian Food Memory Game</h1>
+          <h1>Asian Food Memory Game*</h1>
           <h2>
             Get points by clicking on an image but don&apos;t click on any more
             than once!
           </h2>
         </>
       )}
-    </>
+    </div>
   );
 }

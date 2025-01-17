@@ -34,7 +34,7 @@ export default function Card({
   return (
     <div onClick={handleClick} className="card">
       <p>{name}</p>
-      <img src={image} alt={name} />
+      <img className="card-image" src={image} alt={name} />
     </div>
   );
 }

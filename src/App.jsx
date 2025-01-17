@@ -7,7 +7,7 @@ import Scoreboard from "./components/scoreboard.jsx";
 import DisplayCards from "./components/cardHandler.jsx";
 import { cards as initialCards } from "./components/data.jsx";
 
-const UNSPLASH_ACCESS_KEY = "4zAWY2u-vTzknCrBzHnnH4ScBNI-bWpOQxa4QcQcx1Y";
+const UNSPLASH_ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
 
 function App() {
   const [cards, setCards] = useState(initialCards);
